@@ -331,20 +331,29 @@ button.button {
   display: grid;
   gap: 16px;
   width: 100%;
+  min-width: 0;
 }
 
 .consultation-form label {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 7px;
+  min-width: 0;
   color: var(--ink);
   font-size: 15px;
   font-weight: 800;
 }
 
+.consultation-form label span {
+  display: block;
+}
+
 .consultation-form input[type="text"],
 .consultation-form input[type="email"],
 .consultation-form input[type="tel"] {
+  display: block;
   width: 100%;
+  max-width: 100%;
   min-height: 48px;
   padding: 12px 13px;
   border: 1px solid var(--line);

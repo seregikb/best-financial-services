@@ -19,6 +19,7 @@
     var name = field(form, "name");
     var email = field(form, "email");
     var phone = field(form, "phone");
+    var recipient = form.getAttribute("data-recipient") || "hello@best-financial-services.com";
     var subject = "Educational consultation request";
     var body = [
       "Name: " + name,
@@ -35,7 +36,7 @@
       status.textContent = "Your email app should open with the request details. Please send the message to complete the request.";
     }
 
-    window.location.href = "mailto:hello@best-financial-services.com?subject=" +
+    window.location.href = "mailto:" + encodeURIComponent(recipient) + "?subject=" +
       encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   });
 })();

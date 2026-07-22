@@ -44,12 +44,24 @@
           <h2 id="consultation-title">Request an educational consultation.</h2>
           <p class="form-note">Share your contact details and we will respond by email or phone. Submitting this form opens your email app so you can review and send the request. Please do not send account numbers, Social Security numbers, trade instructions, or other sensitive data.</p>
         </div>
-        <form class="consultation-form" action="mailto:hello@best-financial-services.com" method="post" enctype="text/plain">
-          <label>Name<input name="name" type="text" autocomplete="name" required></label>
-          <label>Email<input name="email" type="email" autocomplete="email" required></label>
-          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
-          <label class="checkbox-label"><input name="consent" type="checkbox" required>I agree to be contacted about educational financial resources and understand this is not personalized investment, tax, or legal advice.</label>
-          <button class="button primary" type="submit">Prepare email request</button>
+        <form class="consultation-form" data-recipient="hello@best-financial-services.com">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+          <label class="checkbox-label">
+            <input name="consent" type="checkbox" required>
+            <span>I agree to be contacted about educational financial resources and understand this is not personalized investment, tax, or legal advice.</span>
+          </label>
+          <button class="button primary" type="submit">Send email request</button>
           <p class="form-status" role="status"></p>
         </form>
       </section>
