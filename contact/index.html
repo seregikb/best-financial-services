@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Best Financial Services</title>
+    <meta name="description" content="Request an educational consultation from Best Financial Services.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header compact">
+      <a class="brand" href="/" aria-label="Best Financial Services home">
+        <span class="brand-mark" aria-hidden="true">BFS</span>
+        <span>Best Financial Services</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/#services">Services</a>
+        <a href="/#insights">Insights</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article-page">
+      <section class="article-shell">
+        <p class="eyebrow">Contact</p>
+        <h1>Request an educational consultation.</h1>
+        <p>
+          Use this form to ask a general question about our educational financial resources.
+          We do not provide personalized investment, tax, or legal advice through this website.
+        </p>
+      </section>
+
+      <section class="consultation-section standalone" aria-labelledby="consultation-title">
+        <div>
+          <p class="eyebrow">Consultation request</p>
+          <h2 id="consultation-title">Share your contact details.</h2>
+          <p class="form-note">
+            Submitting this form opens your email app so you can review and send the request.
+            Please do not send account numbers, Social Security numbers, trade instructions, or
+            other sensitive data.
+          </p>
+        </div>
+        <form class="consultation-form" data-recipient="hello@best-financial-services.com">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              inputmode="tel"
+              pattern="^\+?[0-9][0-9\s().-]{6,19}$"
+              title="Enter a valid phone number using 7 to 15 digits. Country code is optional."
+              required
+            >
+          </label>
+          <label class="checkbox-label">
+            <input name="consent" type="checkbox" required>
+            <span>
+              I agree to be contacted about educational financial resources and understand this is
+              not personalized investment, tax, or legal advice.
+            </span>
+          </label>
+          <button class="button primary" type="submit">Send email request</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>&copy; 2026 Best Financial Services. All rights reserved.</p>
+        <p class="footer-links"><a href="/about/">About</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></p>
+      </div>
+      <p class="disclaimer">Information on this website is for general education only and is not financial, tax, or legal advice.</p>
+    </footer>
+    <script src="/forms.js"></script>
+  </body>
+</html>
