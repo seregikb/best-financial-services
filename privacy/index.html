@@ -29,6 +29,11 @@
           as IP address, browser type, device information, pages visited, and timestamps. This
           information is used for site security, performance, and basic analytics.
         </p>
+        <p>
+          If you submit a consultation request, the form may include your name, email address,
+          phone number, the page you were viewing, and the time of submission. The form is used
+          only so we can respond to your request.
+        </p>
         <h2>How information is used</h2>
         <p>
           Information may be used to operate the website, respond to messages, improve content,
@@ -37,7 +42,23 @@
         <h2>Contact</h2>
         <p>Questions can be sent to <a href="mailto:hello@best-financial-services.com">hello@best-financial-services.com</a>.</p>
       </section>
+      <section class="consultation-section" aria-labelledby="consultation-title">
+        <div>
+          <p class="eyebrow">Contact request</p>
+          <h2 id="consultation-title">Request an educational consultation.</h2>
+          <p class="form-note">Share your contact details and we will respond by email or phone. Submitting this form opens your email app so you can review and send the request. Please do not send account numbers, Social Security numbers, trade instructions, or other sensitive data.</p>
+        </div>
+        <form class="consultation-form" action="mailto:hello@best-financial-services.com" method="post" enctype="text/plain">
+          <label>Name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label class="checkbox-label"><input name="consent" type="checkbox" required>I agree to be contacted about educational financial resources and understand this is not personalized investment, tax, or legal advice.</label>
+          <button class="button primary" type="submit">Prepare email request</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </section>
     </main>
     <footer class="site-footer"><div><p>&copy; 2026 Best Financial Services. All rights reserved.</p><p class="footer-links"><a href="/about/">About</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a></p></div><p class="disclaimer">Information on this website is for general education only and is not financial, tax, or legal advice.</p></footer>
+    <script src="/forms.js"></script>
   </body>
 </html>
